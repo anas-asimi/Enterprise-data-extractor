@@ -3,9 +3,21 @@
   "version": "1.0.0",
   "description": "a web scrapping app to collect data about specific busnesfield in specific regions  \r ### targeted data :\r * Enterprise name.\r * Enterprise mail.\r * Enterprise phone.\r * Enterprise location.\r ### tools :\r * Node.\r * puppeteer.\r * async/await.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "mocha --timeout 100000 --exit"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "puppeteer": "^19.11.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
 }
