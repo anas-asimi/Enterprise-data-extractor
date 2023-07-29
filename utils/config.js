@@ -5,8 +5,12 @@ import keywords from '../json files/keywords.json' assert {type: 'json'};
 
 export const browserConfig = {
     headless: false,
+    devtools: true,
     defaultViewport: null,
-    args: ["--start-maximized"]
+    ignoreDefaultArgs: ["--enable-automation"],
+    args: ["--start-maximized", '--lang=bn-BD,bn', '--test-type', '--disable-infobars','--disable-features=DarkMode']
 };
 
-export {cities ,keywords}
+export const jsonFilePath = './json files/collectedData.json'
+
+export { cities, keywords }
