@@ -14,9 +14,10 @@
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^16.0.3",
+    "edge-paths": "^3.0.5",
     "jsonfile": "^6.1.0",
     "nodemon": "^2.0.22",
-    "puppeteer": "^20.8.2"
+    "puppeteer-core": "^20.9.0"
   },
   "devDependencies": {
     "mocha": "^10.2.0"
